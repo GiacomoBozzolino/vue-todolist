@@ -40,7 +40,7 @@
                         </ul>
                         <div class="row">
                             <div class="col-12 di d-flex justify-content-between p-4">
-                                <input  v-model="newTask" type="text" name="newTask" id="newTask" placeholder="Inserisci una nuova task" >
+                                <input @keyup.enter="addNewTask(newTask)" v-model="newTask" type="text" name="newTask" id="newTask" placeholder="Inserisci una nuova task" >
                                 <button class="btn btn-success" @click="addNewTask(newTask)"> aggiungi task</button>
                             </div>
                         </div>
