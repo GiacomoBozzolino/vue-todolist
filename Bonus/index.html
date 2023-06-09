@@ -16,7 +16,7 @@
             <div class="container ">
              <div class="row text-center">
                  <div class="col-12 p-5">
-                     <h1>VUE TO DO LIST</h1>
+                     <h1>VUE TO DO LIST BONUS</h1>
                  </div>
              </div>
             </div>
@@ -25,10 +25,20 @@
                     <div class="col-12 border border-dark">
                         <ul class="list-group p-2">
                             <li class="p-3 d-flex justify-content-between align-items-center task" v-for="(task, index) in tasks">
-                                <div :class="tasks[index].done ? 'done':'' " >{{tasks[index].text}}</div>
+                                <div class="w-100" :class="tasks[index].done ? 'done':'' " >
+                                    <div v-if="tasks[index].edit" >
+                                        <input  @keyup.enter="editTask(index)" v-model="tasks[index].text" type="text" name="editTask" id="editTask" placeholder=" " >
+                                    </div>
+                                    <div v-else>
+                                        {{tasks[index].text}}
+                                    </div>
+                                </div>
                                 <div class="d-flex align-items-center">
                                     <div class="btn" @click="taskDone(index)">
                                         <i :class="tasks[index].done ? 'fa-solid fa-square-check':'fa-solid fa-square-xmark' "></i>
+                                    </div>
+                                    <div class="btn" @click="editTask(index)">
+                                        <i class="fa-solid fa-pen-to-square"></i>
                                     </div>
                                     <div class="btn" @click="delateTask(index)">
                                         <i class="fa-solid fa-trash-can"></i>

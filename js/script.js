@@ -51,7 +51,8 @@ createApp({
         }
 
         this.tasks.push(obj)
-        this.newTask
+        
+        this.newTask=''
         console.log(newTask)
       },
     },
