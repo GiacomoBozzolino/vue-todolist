@@ -58,6 +58,7 @@ createApp({
         let obj = {
             text: newTask,
             done: false,
+            edit: false
         }
         this.tasks.push(obj)
         this.newTask=''
