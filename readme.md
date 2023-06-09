@@ -15,5 +15,11 @@ MODIFICARE LO STATO DELLA TASK
 2.7- Al click associo anche il cambiamento dell'icona visualizzata.
 
 ELIMINAZIONE DI UNA TASK
+2.8- creo una funzione che al click del pulsante rimuova l'elemento dall'array
+    NB. posso utilizzare splice
+AGGIUNTA DI UNA TASK
+2.9 - Creo una variabile in app data
+3- Utilizzo la variabile per recuperare quanto viene scritto nell'imput utilizzando V-model
+    3.1- creo una funzione all'interno della quale creo un nuovo oggetto. A text: associo quanto recuperato nell'imput.
+    3.2- aggiungo l'oggetto creato all'array usando .push    
 
-Aggiunta di una task

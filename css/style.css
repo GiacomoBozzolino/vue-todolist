@@ -34,6 +34,8 @@ input{
 
 .done{
     text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    
 }
 
 .fa-square-xmark{

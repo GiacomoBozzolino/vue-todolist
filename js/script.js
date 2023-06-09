@@ -3,6 +3,8 @@ const { createApp } = Vue
 createApp({
     data() {
       return {
+
+        newTask : '',
         tasks:[
             { text: 'Comprare una valigia',
             done: false
@@ -30,10 +32,7 @@ createApp({
             },
             { text: 'Fare il pieno alla macchina',
             done: false
-
             },
-
-
         ],
       }
     },
@@ -44,6 +43,16 @@ createApp({
       delateTask(index){
         this.tasks.splice(index,1)
         console.log(this.tasks.slice)
-      }
+      },
+      addNewTask(newTask){
+        let obj = {
+            text: newTask,
+            done: false,
+        }
+
+        this.tasks.push(obj)
+        this.newTask
+        console.log(newTask)
+      },
     },
   }).mount('#app')
