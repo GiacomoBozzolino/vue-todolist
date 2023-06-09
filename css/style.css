@@ -38,12 +38,16 @@ input{
 
 .fa-square-xmark{
     color: rgb(0, 0, 0);
-    font-size: 35px;
+    font-size: 30px;
   
 }
 
 .fa-square-check{
     color: rgb(18, 95, 6);
-    font-size: 35px;
+    font-size: 30px;
   
+}
+
+.fa-trash-can{
+    font-size: 30px;
 }

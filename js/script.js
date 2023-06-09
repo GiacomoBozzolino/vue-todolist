@@ -40,6 +40,10 @@ createApp({
     methods: {
       taskDone(index){
         this.tasks[index].done=!this.tasks[index].done
+      },
+      delateTask(index){
+        this.tasks.splice(index,1)
+        console.log(this.tasks.slice)
       }
     },
   }).mount('#app')
