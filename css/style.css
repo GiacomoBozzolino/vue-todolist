@@ -31,3 +31,7 @@ input{
     border: none;
     width: 80%;
 }
+
+.done{
+    text-decoration: line-through;
+}

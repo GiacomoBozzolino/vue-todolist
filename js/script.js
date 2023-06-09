@@ -9,7 +9,7 @@ createApp({
 
             },
             { text: 'Lavare la macchina',
-            done: false
+            done: true
 
             },
             { text: 'Preparare lo zaino',
@@ -17,11 +17,11 @@ createApp({
 
             },
             { text: 'Controllare la carica delle batterie',
-            done: false
+            done: true
 
             },
             { text: 'Mettere la macchina fotografica nello zaino',
-            done: false
+            done: true
 
             },
             { text: 'Telefonare all\'hotel',
