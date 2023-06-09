@@ -35,11 +35,11 @@ createApp({
 
 
         ],
-
-
-
-
-        
       }
-    }
+    },
+    methods: {
+      taskDone(index){
+        this.tasks[index].done=!this.tasks[index].done
+      }
+    },
   }).mount('#app')

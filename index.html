@@ -26,8 +26,8 @@
                         <ul class="list-group p-2">
                             <li class="p-3 d-flex justify-content-between align-items-center task" v-for="(task, index) in tasks">
                                 <div :class="tasks[index].done ? 'done':'' " >{{tasks[index].text}}</div>
-                                <div class="btn btn-success btn-sm">
-                                    <i class="fa-sharp fa-solid fa-check "></i>
+                                <div class="btn  " @click="taskDone(index)">
+                                    <i :class="tasks[index].done ? 'fa-solid fa-square-check':'fa-solid fa-square-xmark' "></i>
                                 </div>
                             </li>  
                         </ul>

@@ -35,3 +35,15 @@ input{
 .done{
     text-decoration: line-through;
 }
+
+.fa-square-xmark{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+  
+}
+
+.fa-square-check{
+    color: rgb(18, 95, 6);
+    font-size: 35px;
+  
+}
