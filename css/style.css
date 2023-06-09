@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(200, 206, 216, 0.486);
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 60px;
+}
+
+
+.task{
+    font-size: 25px;
+    border-bottom:2px solid grey; ;
+}
+
+.background{
+    background-color: rgba(78, 164, 250, 0.551);
+}
+
+
+input{
+    border: none;
+    width: 80%;
+}
